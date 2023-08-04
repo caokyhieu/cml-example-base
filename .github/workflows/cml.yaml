@@ -15,5 +15,6 @@ jobs:
           python train.py
 
           cat metrics.txt >> report.md
+          echo $REPO_TOKEN
           echo "![](./plot.png)" >> report.md
           cml comment create report.md
