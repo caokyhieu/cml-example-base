@@ -11,7 +11,7 @@ jobs:
           version: 'latest'
       - name: Train model
         env:
-          CML_DRIVER_TOKEN: ${{ secrets.HIEU_TOKEN }}
+          REPO_TOKEN: ${{ secrets.HIEU_TOKEN }}
         run: |
           pip install -r requirements.txt
           python train.py
